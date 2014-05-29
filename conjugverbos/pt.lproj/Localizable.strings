@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  conjugverbos
+
+  Created by Peterson Guimarães Luciano on 11/29/13.
+  Copyright (c) 2013 Peterson Guimarães Luciano. All rights reserved.
+*/
+"TITULO_VERBO" = "Conjugação do verbo";
+"TITLE_VERBOS" = "Selecione um Verbo";
+"TITLE_ABOUT"  = "Sobre";
+"TITLE_CLASSIFIQUE" = "Classifique";
+"LABLE_BUSCAR_NA_LETRA" = "Buscar na letra ";
+"LABLE_BUSCAR_TODOS_VERBOS" = "Buscar em todos os verbos";

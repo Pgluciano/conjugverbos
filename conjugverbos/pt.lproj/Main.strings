@@ -1,0 +1,132 @@
+
+/* Class = "IBUIButton"; normalTitle = "O"; ObjectID = "3YJ-em-ML2"; */
+"3YJ-em-ML2.normalTitle" = "O";
+
+/* Class = "IBUIButton"; normalTitle = "X"; ObjectID = "3gY-bO-XhZ"; */
+"3gY-bO-XhZ.normalTitle" = "X";
+
+/* Class = "IBUIButton"; normalTitle = "J"; ObjectID = "4SH-Qr-XUp"; */
+"4SH-Qr-XUp.normalTitle" = "J";
+
+/* Class = "IBUIViewController"; title = "Classifique"; ObjectID = "5pF-4d-i6V"; */
+"5pF-4d-i6V.title" = "Classifique";
+
+/* Class = "IBUIButton"; normalTitle = "H"; ObjectID = "7Mw-LJ-KhO"; */
+"7Mw-LJ-KhO.normalTitle" = "H";
+
+/* Class = "IBUINavigationController"; title = "Sobre"; ObjectID = "9Tf-wV-JgC"; */
+"9Tf-wV-JgC.title" = "Sobre";
+
+/* Class = "IBUIButton"; normalTitle = "Q"; ObjectID = "BpP-py-v4y"; */
+"BpP-py-v4y.normalTitle" = "Q";
+
+/* Class = "IBUINavigationItem"; title = "Todos os Verbos"; ObjectID = "DNx-hx-10X"; */
+"DNx-hx-10X.title" = "Todos os Verbos";
+
+/* Class = "IBUIButton"; normalTitle = "S"; ObjectID = "EFn-fT-dnf"; */
+"EFn-fT-dnf.normalTitle" = "S";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "EO6-O0-fJi"; */
+"EO6-O0-fJi.title" = "Item";
+
+/* Class = "IBUITabBarItem"; title = "Sobre"; ObjectID = "GQ1-cs-Qwn"; */
+"GQ1-cs-Qwn.title" = "Sobre";
+
+/* Class = "IBUINavigationController"; title = "ConjugVerbos"; ObjectID = "KUc-g5-IyO"; */
+"KUc-g5-IyO.title" = "ConjugVerbos";
+
+/* Class = "IBUITextView"; text = "Queremos saber sua opnião sobre o aplicativo. Caso tenha alguma critica, sugestão, ou queira fazer algum pedido por favor entre em contato: linux.soares@gmail.com\npgluciano@gmail.com\nhttp://itinerariosp.com.br"; ObjectID = "Lg8-IS-4Tv"; */
+"Lg8-IS-4Tv.text" = "Queremos saber sua opnião sobre o aplicativo. Caso tenha alguma critica, sugestão, ou queira fazer algum pedido por favor entre em contato: linux.soares@gmail.com\npgluciano@gmail.com\nhttp://itinerariosp.com.br";
+
+/* Class = "IBUIButton"; normalTitle = "A"; ObjectID = "MFQ-O1-9HY"; */
+"MFQ-O1-9HY.normalTitle" = "A";
+
+/* Class = "IBUIButton"; normalTitle = "E"; ObjectID = "Nd6-m5-gnc"; */
+"Nd6-m5-gnc.normalTitle" = "E";
+
+/* Class = "IBUIButton"; normalTitle = "Z"; ObjectID = "Nkr-Tg-OjN"; */
+"Nkr-Tg-OjN.normalTitle" = "Z";
+
+/* Class = "IBUINavigationItem"; title = "Selecione uma Letra"; ObjectID = "Q3V-O2-kmP"; */
+"Q3V-O2-kmP.title" = "Selecione uma Letra";
+
+/* Class = "IBUITableViewController"; title = "Selecione um Verbo"; ObjectID = "Q5g-Eu-CVb"; */
+"Q5g-Eu-CVb.title" = "Selecione um Verbo";
+
+/* Class = "IBUIButton"; normalTitle = "D"; ObjectID = "R7j-nz-YJi"; */
+"R7j-nz-YJi.normalTitle" = "D";
+
+/* Class = "IBUIButton"; normalTitle = "R"; ObjectID = "Rx4-Vr-Y1w"; */
+"Rx4-Vr-Y1w.normalTitle" = "R";
+
+/* Class = "IBUIButton"; normalTitle = "B"; ObjectID = "Te0-PK-1wY"; */
+"Te0-PK-1wY.normalTitle" = "B";
+
+/* Class = "IBUIButton"; normalTitle = "T"; ObjectID = "U1t-st-mMK"; */
+"U1t-st-mMK.normalTitle" = "T";
+
+/* Class = "IBUIButton"; normalTitle = "G"; ObjectID = "UMK-jY-h8s"; */
+"UMK-jY-h8s.normalTitle" = "G";
+
+/* Class = "IBUIButton"; normalTitle = "C"; ObjectID = "VKb-ab-YWf"; */
+"VKb-ab-YWf.normalTitle" = "C";
+
+/* Class = "IBUIViewController"; title = "Sobre"; ObjectID = "Wog-6m-1XB"; */
+"Wog-6m-1XB.title" = "Sobre";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "XLZ-xW-8rQ"; */
+"XLZ-xW-8rQ.text" = "Label";
+
+/* Class = "IBUITextView"; text = "Você também pode utilizar o ConjugVerbos no Firefox OS, Windows 8, Android ou na internet. Visite:"; ObjectID = "Y9j-S6-sb0"; */
+"Y9j-S6-sb0.text" = "Você também pode utilizar o ConjugVerbos no Firefox OS, Windows 8, Android ou na internet. Visite:";
+
+/* Class = "IBUIViewController"; title = "Selecione uma Letra"; ObjectID = "YM0-yq-QlK"; */
+"YM0-yq-QlK.title" = "Selecione uma Letra";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "bni-39-UL5"; */
+"bni-39-UL5.title" = "Item";
+
+/* Class = "IBUITabBarItem"; title = "Classifique"; ObjectID = "cDa-7G-pcL"; */
+"cDa-7G-pcL.title" = "Classifique";
+
+/* Class = "IBUIButton"; normalTitle = "U"; ObjectID = "dvi-b0-q8a"; */
+"dvi-b0-q8a.normalTitle" = "U";
+
+/* Class = "IBUILabel"; text = "Eu:"; ObjectID = "gEy-qN-m9e"; */
+"gEy-qN-m9e.text" = "Eu:";
+
+/* Class = "IBUIButton"; normalTitle = "http://conjugverbos.com.br"; ObjectID = "gJp-PM-DLj"; */
+"gJp-PM-DLj.normalTitle" = "http://conjugverbos.com.br";
+
+/* Class = "IBUIButton"; normalTitle = "V"; ObjectID = "gpu-It-h48"; */
+"gpu-It-h48.normalTitle" = "V";
+
+/* Class = "IBUITabBarItem"; title = "Verbos"; ObjectID = "hnm-ay-C8b"; */
+"hnm-ay-C8b.title" = "Verbos";
+
+/* Class = "IBUINavigationController"; title = "Classifique"; ObjectID = "imt-WH-f48"; */
+"imt-WH-f48.title" = "Classifique";
+
+/* Class = "IBUIButton"; normalTitle = "F"; ObjectID = "oLe-zE-OJ2"; */
+"oLe-zE-OJ2.normalTitle" = "F";
+
+/* Class = "IBUIButton"; normalTitle = "N"; ObjectID = "on4-FH-3d3"; */
+"on4-FH-3d3.normalTitle" = "N";
+
+/* Class = "IBUIButton"; normalTitle = "I"; ObjectID = "qMs-LN-beD"; */
+"qMs-LN-beD.normalTitle" = "I";
+
+/* Class = "IBUIButton"; normalTitle = "L"; ObjectID = "qr5-t4-KTF"; */
+"qr5-t4-KTF.normalTitle" = "L";
+
+/* Class = "IBUIButton"; normalTitle = "Avalie o aplicativo na AppStore >"; ObjectID = "s4t-Ma-t1X"; */
+"s4t-Ma-t1X.normalTitle" = "Avalie o aplicativo na AppStore >";
+
+/* Class = "IBUIButton"; normalTitle = "P"; ObjectID = "wXL-Rl-44d"; */
+"wXL-Rl-44d.normalTitle" = "P";
+
+/* Class = "IBUIButton"; normalTitle = "M"; ObjectID = "yAO-Cw-o5M"; */
+"yAO-Cw-o5M.normalTitle" = "M";
+
+/* Class = "IBUITabBarItem"; title = "Lista"; ObjectID = "yuf-cw-cbD"; */
+"yuf-cw-cbD.title" = "Lista";

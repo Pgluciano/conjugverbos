@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View VerbosSB-->
+        <scene sceneID="7Do-fd-aW1">
+            <objects>
+                <tableViewController storyboardIdentifier="viewVerbosSB" id="0Gs-Zf-Mwd" customClass="ViewVerbosSB" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IfG-DY-mQR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Mgb-6u-C75">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            <connections>
+                                <outlet property="delegate" destination="0Gs-Zf-Mwd" id="sg2-N3-pxz"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ZNH-un-bEM">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZNH-un-bEM" id="t1h-gZ-2FW">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0Gs-Zf-Mwd" id="rXo-D9-nH3"/>
+                            <outlet property="delegate" destination="0Gs-Zf-Mwd" id="eGf-Oh-hxQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ClL-TY-NrR"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Fd0-Wz-J29" id="ncm-19-pfz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmM-5l-hsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="LOR-dl-oBL">
+                    <connections>
+                        <outlet property="delegate" destination="0Gs-Zf-Mwd" id="tH3-Kz-Vgg"/>
+                        <outlet property="searchContentsController" destination="0Gs-Zf-Mwd" id="QgF-Ra-CKH"/>
+                        <outlet property="searchResultsDataSource" destination="0Gs-Zf-Mwd" id="VFF-p4-uPC"/>
+                        <outlet property="searchResultsDelegate" destination="0Gs-Zf-Mwd" id="Xlw-IW-ahw"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="Fd0-Wz-J29">
+                    <connections>
+                        <outlet property="delegate" destination="0Gs-Zf-Mwd" id="Xew-dR-umt"/>
+                        <outlet property="searchBar" destination="Mgb-6u-C75" id="gMj-9Z-Nrf"/>
+                        <outlet property="searchContentsController" destination="0Gs-Zf-Mwd" id="Vag-ci-vHg"/>
+                        <outlet property="searchResultsDataSource" destination="0Gs-Zf-Mwd" id="pDe-RW-ngX"/>
+                        <outlet property="searchResultsDelegate" destination="0Gs-Zf-Mwd" id="ebU-00-q5D"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-500" y="225"/>
+        </scene>
+        <!--Verbos - Selecione um Verbo-->
+        <scene sceneID="bEH-UQ-m8w">
+            <objects>
+                <tableViewController storyboardIdentifier="viewVerbos" title="Selecione um Verbo" id="Q5g-Eu-CVb" customClass="Verbos" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ytr-st-DcB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fyn-PS-zPe">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fyn-PS-zPe" id="IRb-tS-tiE">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7UD-7Y-A6b" kind="push" id="pGz-ar-au4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Q5g-Eu-CVb" id="wjj-kC-dZ6"/>
+                            <outlet property="delegate" destination="Q5g-Eu-CVb" id="Erf-SQ-tR7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="7cb-aA-c9q"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mhl-UO-zku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="270"/>
+        </scene>
+        <!--View Verbos Controller-->
+        <scene sceneID="as7-5S-hXA">
+            <objects>
+                <viewController storyboardIdentifier="viewVerbosDet" id="7UD-7Y-A6b" customClass="ViewVerbosController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kIZ-Qk-sZJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yu6-95-1la"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mue-NB-Juc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eu:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEy-qN-m9e">
+                                <rect key="frame" x="20" y="20" width="25" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLZ-xW-8rQ">
+                                <rect key="frame" x="53" y="20" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnl-5S-dbf">
+                                <rect key="frame" x="0.0" y="65" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lC6-kv-oGw">
+                                <rect key="frame" x="150" y="281" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8wm-n8-Ocm"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="TempoPresente" destination="XLZ-xW-8rQ" id="yuF-tG-jDb"/>
+                        <outlet property="indicator" destination="lC6-kv-oGw" id="Hbe-Ma-5ME"/>
+                        <outlet property="webView" destination="vnl-5S-dbf" id="i9M-WM-c8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZV-hl-8yo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2001" y="266"/>
+        </scene>
+        <!--View Controller Classifique - Classifique-->
+        <scene sceneID="o7x-K7-FEv">
+            <objects>
+                <viewController title="Classifique" id="5pF-4d-i6V" customClass="ViewControllerClassifique" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xz7-vJ-P9h"/>
+                        <viewControllerLayoutGuide type="bottom" id="yfY-hD-Vkx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vK9-R2-nHu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg8-IS-4Tv">
+                                <rect key="frame" x="20" y="109" width="280" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Queremos saber sua opnião sobre o aplicativo. Caso tenha alguma critica, sugestão, ou queira fazer algum pedido por favor entre em contato: linux.soares@gmail.com
+pgluciano@gmail.com
+http://itinerariosp.com.br</string>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pbL-8w-uw1"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkH-A7-V4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="-1281"/>
+        </scene>
+        <!--View Sobre - Sobre-->
+        <scene sceneID="82Q-Tk-4xE">
+            <objects>
+                <viewController title="Sobre" id="Wog-6m-1XB" customClass="ViewSobre" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uZF-IP-qhf"/>
+                        <viewControllerLayoutGuide type="bottom" id="xHi-Ph-WB7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ET4-qq-vc1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQi-gG-ZOr">
+                                <rect key="frame" x="0.0" y="111" width="320" height="404"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Queremos saber sua opnião sobre o aplicativo.
+Caso tenha alguma critica, sugestão, ou queira fazer algum pedido por favor entre em contato: 
+linux.soares@gmail.com
+pgluciano@gmail.com
+
+Sobre: 
+Com o intuito de auxiliar alunos e professores no estudo de verbos surge o ConjugVerbos.
+Com nosso conjugador verbal você terá acesso a todos os verbos da língua portuguesa e suas conjugações.
+Baixe, utilize e bons estudos!
+
+
+Política de privacidade:
+A garantia da confidencialidade dos dados pessoais dos utilizadores da aplicação é importante.
+
+Todas as informações pessoais dos utilizadores serão tratadas em concordância com a Lei de Proteção de Dados Pessoais de 26 de outubro de 1998 (Lei n.Âº 67/98). 
+As informações pessoais não serão recolhidas respeitado o anonimato do utilizador. 
+O uso da aplicação pressupõe a aceitação deste acordo de privacidade.
+A equipa da aplicação reserva-se ao direito de alterar este acordo sem aviso prévio. 
+Deste modo, recomendamos que consulte a nossa política de privacidade com regularidade de forma a estar sempre atualizado.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4t-Ma-t1X">
+                                <rect key="frame" x="47" y="79" width="227" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Avalie o aplicativo na AppStore >">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotoReviews:" destination="Wog-6m-1XB" eventType="touchDown" id="2Hc-1L-r1U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fY9-K7-Zdj"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8D3-ZF-e3a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="-1291"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vex-rW-GRa">
+            <objects>
+                <tabBarController modalTransitionStyle="crossDissolve" id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KUc-g5-IyO" kind="relationship" relationship="viewControllers" id="mt1-qe-poX"/>
+                        <segue destination="Jgg-gA-efW" kind="relationship" relationship="viewControllers" id="fwF-Ob-xOY"/>
+                        <segue destination="9Tf-wV-JgC" kind="relationship" relationship="viewControllers" id="5Ya-DZ-rfo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="-556"/>
+        </scene>
+        <!--View Letras - Selecione uma Letra-->
+        <scene sceneID="d33-E9-d2f">
+            <objects>
+                <viewController storyboardIdentifier="viewLetras" title="Selecione uma Letra" id="YM0-yq-QlK" customClass="ViewLetras" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uaq-Uf-QhD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rri-o9-2tU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tme-fP-EwO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background_Theme_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ASc-UW-f70">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gi4-Mu-QUH" appends="YES" id="IUT-h4-Fkz"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFQ-O1-9HY">
+                                <rect key="frame" x="20" y="108" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="bPe-dg-y1R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd6-m5-gnc">
+                                <rect key="frame" x="20" y="168" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="E">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnEc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="dtF-LK-sfw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMs-LN-beD">
+                                <rect key="frame" x="20" y="228" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="I">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnIc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="I7K-l3-ShK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="on4-FH-3d3">
+                                <rect key="frame" x="20" y="288" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="N">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="W6d-xe-l5J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx4-Vr-Y1w">
+                                <rect key="frame" x="20" y="348" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="R">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="iUO-nA-6j4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-It-h48">
+                                <rect key="frame" x="61" y="408" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="V">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnVc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="R8H-to-wpu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te0-PK-1wY">
+                                <rect key="frame" x="96" y="108" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="B">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="YjB-hR-YCY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLe-zE-OJ2">
+                                <rect key="frame" x="96" y="168" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="F">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="dGb-jI-Gen"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SH-Qr-XUp">
+                                <rect key="frame" x="96" y="228" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="J">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnJc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="zfu-ZJ-pHA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YJ-em-ML2">
+                                <rect key="frame" x="96" y="288" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="O">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="f7A-zc-jMU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-fT-dnf">
+                                <rect key="frame" x="96" y="348" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="S">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="Fai-Zp-zvf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gY-bO-XhZ">
+                                <rect key="frame" x="137" y="408" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="X">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnXc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="Hnk-7t-dRK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKb-ab-YWf">
+                                <rect key="frame" x="172" y="108" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnCc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="Gby-Hy-So1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMK-jY-h8s">
+                                <rect key="frame" x="172" y="168" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="G">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="QHB-db-bmI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr5-t4-KTF">
+                                <rect key="frame" x="172" y="228" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="L">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="P75-Sa-kfV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXL-Rl-44d">
+                                <rect key="frame" x="172" y="288" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="P">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="uOj-Pv-ryR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1t-st-mMK">
+                                <rect key="frame" x="172" y="348" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="T">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="Y3f-0P-6gQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkr-Tg-OjN">
+                                <rect key="frame" x="213" y="408" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="Z">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnZc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="0me-iL-eM4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7j-nz-YJi">
+                                <rect key="frame" x="248" y="108" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="D">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="8QY-Ia-D3U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-LJ-KhO">
+                                <rect key="frame" x="248" y="168" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="H">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="zBb-34-fuV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAO-Cw-o5M">
+                                <rect key="frame" x="248" y="228" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="M">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="OHa-ck-byq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpP-py-v4y">
+                                <rect key="frame" x="248" y="288" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="Q">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnQc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="Zgx-lc-TDt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvi-b0-q8a">
+                                <rect key="frame" x="248" y="348" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
+                                <state key="normal" title="U">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnUc:" destination="YM0-yq-QlK" eventType="touchUpInside" id="jka-Oo-Ynt"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7eb-M6-atU">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YM0-yq-QlK" id="bfI-R4-n33"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Selecione uma Letra" id="Q3V-O2-kmP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="0Z1-Ib-eIf">
+                            <connections>
+                                <action selector="btnSearch:" destination="YM0-yq-QlK" id="7RS-pY-oku"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <keyCommands/>
+                    <connections>
+                        <outlet property="btnA" destination="MFQ-O1-9HY" id="t8d-wY-Fwl"/>
+                        <outlet property="btnB" destination="Te0-PK-1wY" id="9p1-2L-t1J"/>
+                        <outlet property="btnC" destination="VKb-ab-YWf" id="L9j-Sc-wIB"/>
+                        <outlet property="btnD" destination="R7j-nz-YJi" id="8yX-e4-XUY"/>
+                        <outlet property="btnE" destination="Nd6-m5-gnc" id="YAN-9p-cTo"/>
+                        <outlet property="btnF" destination="oLe-zE-OJ2" id="vUM-Do-9sd"/>
+                        <outlet property="btnG" destination="UMK-jY-h8s" id="zGa-0Z-LZD"/>
+                        <outlet property="btnH" destination="7Mw-LJ-KhO" id="yNW-Xk-bPy"/>
+                        <outlet property="btnI" destination="qMs-LN-beD" id="iPY-oH-LdI"/>
+                        <outlet property="btnJ" destination="4SH-Qr-XUp" id="Fj0-gz-lGg"/>
+                        <outlet property="btnL" destination="qr5-t4-KTF" id="6hj-Fp-jSK"/>
+                        <outlet property="btnM" destination="yAO-Cw-o5M" id="cn7-BP-tsC"/>
+                        <outlet property="btnN" destination="on4-FH-3d3" id="IoT-yw-S26"/>
+                        <outlet property="btnO" destination="3YJ-em-ML2" id="2CK-sV-mwP"/>
+                        <outlet property="btnP" destination="wXL-Rl-44d" id="Lfl-cL-umc"/>
+                        <outlet property="btnQ" destination="BpP-py-v4y" id="2C6-mL-7Ih"/>
+                        <outlet property="btnR" destination="Rx4-Vr-Y1w" id="C4n-Yd-23F"/>
+                        <outlet property="btnS" destination="EFn-fT-dnf" id="imu-rI-IG9"/>
+                        <outlet property="btnT" destination="U1t-st-mMK" id="0wu-9o-XjT"/>
+                        <outlet property="btnU" destination="dvi-b0-q8a" id="o9W-kM-vVT"/>
+                        <outlet property="btnV" destination="gpu-It-h48" id="wXh-IM-GQP"/>
+                        <outlet property="btnX" destination="3gY-bO-XhZ" id="xJU-dN-bmv"/>
+                        <outlet property="btnZ" destination="Nkr-Tg-OjN" id="PYC-aE-z8g"/>
+                        <outlet property="searchBar" destination="7eb-M6-atU" id="nqE-ZG-8vo"/>
+                        <outlet property="searchDisplayController" destination="4et-Jc-vgL" id="Wip-Uu-ZZt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMz-Lg-acM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="4et-Jc-vgL">
+                    <connections>
+                        <outlet property="delegate" destination="YM0-yq-QlK" id="r52-4Y-etZ"/>
+                        <outlet property="searchBar" destination="7eb-M6-atU" id="H8X-eu-WLf"/>
+                        <outlet property="searchContentsController" destination="YM0-yq-QlK" id="3XG-TZ-PKz"/>
+                        <outlet property="searchResultsDataSource" destination="YM0-yq-QlK" id="2rE-gV-6gc"/>
+                        <outlet property="searchResultsDelegate" destination="YM0-yq-QlK" id="OKx-8k-LnX"/>
+                    </connections>
+                </searchDisplayController>
+                <swipeGestureRecognizer direction="down" id="gi4-Mu-QUH"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="-550"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="Lgj-zW-cHO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tIz-X6-sWy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="EO6-O0-fJi"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZXq-kN-dM6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Q5g-Eu-CVb" kind="relationship" relationship="rootViewController" id="9Zb-tW-3JO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bsm-5a-bnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="270"/>
+        </scene>
+        <!--Navigation Controller - ConjugVerbos-->
+        <scene sceneID="2aQ-cm-fIq">
+            <objects>
+                <navigationController title="ConjugVerbos" automaticallyAdjustsScrollViewInsets="NO" id="KUc-g5-IyO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Verbos" image="v_icon" id="hnm-ay-C8b"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EI6-Lc-eZR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YM0-yq-QlK" kind="relationship" relationship="rootViewController" id="Dbp-ff-kh9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKG-CY-EdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="-539"/>
+        </scene>
+        <!--Navigation Controller - Classifique-->
+        <scene sceneID="uNG-f4-8BG">
+            <objects>
+                <navigationController title="Classifique" automaticallyAdjustsScrollViewInsets="NO" id="imt-WH-f48" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Classifique" image="star" id="cDa-7G-pcL" propertyAccessControl="localizable"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8yg-VL-BJt"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MJg-Ne-CBF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Rga-m0-eY3">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="5pF-4d-i6V" kind="relationship" relationship="rootViewController" id="CKB-XV-571"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pnr-0U-sGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="-1281"/>
+        </scene>
+        <!--Navigation Controller - Sobre-->
+        <scene sceneID="zaz-IH-thy">
+            <objects>
+                <navigationController title="Sobre" automaticallyAdjustsScrollViewInsets="NO" id="9Tf-wV-JgC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sobre" image="info" id="GQ1-cs-Qwn"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="X7h-7x-TqP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="S0s-Sq-STD">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Wog-6m-1XB" kind="relationship" relationship="rootViewController" id="5x7-cC-Aqp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Np3-Xi-b0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-892" y="-1291"/>
+        </scene>
+        <!--Navigation Controller - Lista-->
+        <scene sceneID="2g5-gn-sPx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jgg-gA-efW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lista" image="Lista" id="yuf-cw-cbD"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G0Y-3R-Htc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3S2-J5-BQU" kind="relationship" relationship="rootViewController" id="o8d-Dc-b9x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rw9-vz-wvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="270"/>
+        </scene>
+        <!--View All Lista - Todos os Verbos-->
+        <scene sceneID="Ao8-N0-yMQ">
+            <objects>
+                <tableViewController storyboardIdentifier="ViewAllLista" id="3S2-J5-BQU" customClass="ViewAllLista" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SaX-rO-rpd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Fb4-Xd-fQu">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            <connections>
+                                <outlet property="delegate" destination="3S2-J5-BQU" id="i0B-fh-9o0"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uiF-7g-wks">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uiF-7g-wks" id="6my-yI-Uva">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3S2-J5-BQU" id="QkI-zl-cXN"/>
+                            <outlet property="delegate" destination="3S2-J5-BQU" id="a0d-P8-GFo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Todos os Verbos" id="DNx-hx-10X"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="CoF-ut-mIb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="QuO-nF-x8e" id="iZH-gC-3o9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEl-o5-xna" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="FEx-8c-8sO">
+                    <connections>
+                        <outlet property="delegate" destination="3S2-J5-BQU" id="nEi-Fu-AVn"/>
+                        <outlet property="searchContentsController" destination="3S2-J5-BQU" id="Rx5-nD-Ihe"/>
+                        <outlet property="searchResultsDataSource" destination="3S2-J5-BQU" id="uwd-mc-iXR"/>
+                        <outlet property="searchResultsDelegate" destination="3S2-J5-BQU" id="itc-u5-Ga1"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="QuO-nF-x8e">
+                    <connections>
+                        <outlet property="delegate" destination="3S2-J5-BQU" id="sws-MV-PIf"/>
+                        <outlet property="searchBar" destination="Fb4-Xd-fQu" id="Cfy-uq-ciP"/>
+                        <outlet property="searchContentsController" destination="3S2-J5-BQU" id="Yfs-k0-0xq"/>
+                        <outlet property="searchResultsDataSource" destination="3S2-J5-BQU" id="H3w-ik-aaL"/>
+                        <outlet property="searchResultsDelegate" destination="3S2-J5-BQU" id="XEf-8t-jua"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="585" y="266"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="jUu-2D-lN0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1vd-h8-iZz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bni-39-UL5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FiL-zj-iSB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Gs-Zf-Mwd" kind="relationship" relationship="rootViewController" id="7xW-ai-LD1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zfa-qJ-E8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1026" y="225"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background_Theme_1.jpg" width="640" height="1136"/>
+        <image name="Lista" width="31" height="31"/>
+        <image name="info" width="31" height="30"/>
+        <image name="star" width="31" height="31"/>
+        <image name="v_icon" width="30" height="31"/>
+    </resources>
+    <color key="tintColor" red="0.20000001789999999" green="0.59215688710000003" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

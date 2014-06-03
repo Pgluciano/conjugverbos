@@ -113,9 +113,7 @@
     [btnV addMotionEffect:group];
     [btnX addMotionEffect:group];
     [btnZ addMotionEffect:group];
-    
-    
-    
+
     
     
     

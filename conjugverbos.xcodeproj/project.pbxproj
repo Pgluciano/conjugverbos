@@ -78,6 +78,7 @@
 		BF5723A217FD224A006F3DE1 /* ViewControllerClassifique.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5723A117FD224A006F3DE1 /* ViewControllerClassifique.m */; };
 		BF82DA7B18049365009CA840 /* ViewSobre.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82DA7A18049365009CA840 /* ViewSobre.m */; };
 		BF8A43591804F25C00B13D9D /* ViewAllLista.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8A43581804F25C00B13D9D /* ViewAllLista.m */; };
+		BF917B2D193AC76300834F2A /* iPad_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF917B2C193AC76300834F2A /* iPad_Storyboard.storyboard */; };
 		BFA7E37C184597A200B99EDD /* Background_Theme_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFA7E37B184597A200B99EDD /* Background_Theme_1.jpg */; };
 		BFAF9324184821050051D9B2 /* letraA.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAF9309184821050051D9B2 /* letraA.json */; };
 		BFAF9325184821050051D9B2 /* letraB.json in Resources */ = {isa = PBXBuildFile; fileRef = BFAF930A184821050051D9B2 /* letraB.json */; };
@@ -196,6 +197,7 @@
 		BF82DA7A18049365009CA840 /* ViewSobre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSobre.m; sourceTree = "<group>"; };
 		BF8A43571804F25C00B13D9D /* ViewAllLista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAllLista.h; sourceTree = "<group>"; };
 		BF8A43581804F25C00B13D9D /* ViewAllLista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAllLista.m; sourceTree = "<group>"; };
+		BF917B2C193AC76300834F2A /* iPad_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad_Storyboard.storyboard; sourceTree = "<group>"; };
 		BFA7E37B184597A200B99EDD /* Background_Theme_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Background_Theme_1.jpg; path = conjugVerbos_imagens/Background_Theme_1.jpg; sourceTree = SOURCE_ROOT; };
 		BFAF9309184821050051D9B2 /* letraA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = letraA.json; sourceTree = "<group>"; };
 		BFAF930A184821050051D9B2 /* letraB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = letraB.json; sourceTree = "<group>"; };
@@ -325,10 +327,12 @@
 		BF4C95D417F8DE3400B26952 /* conjugverbos */ = {
 			isa = PBXGroup;
 			children = (
+				BF7C3C341939897800BF09E0 /* iPad */,
 				BF4C95DD17F8DE3400B26952 /* AppDelegate.h */,
 				BF4C95DE17F8DE3400B26952 /* AppDelegate.m */,
 				BF4C960917F8F32300B26952 /* ViewVerbosController.h */,
 				BF4C95E017F8DE3400B26952 /* Main.storyboard */,
+				BF917B2C193AC76300834F2A /* iPad_Storyboard.storyboard */,
 				BFB277C7184890DB0043E51D /* Localizable.strings */,
 				BFD5EAF7183323960010D945 /* menu_letras.png */,
 				BFF791D61831B78200C2F16B /* firefox.jpeg */,
@@ -426,6 +430,13 @@
 			);
 			name = jpg;
 			path = ../conjugVerbos_imagens/jpg;
+			sourceTree = "<group>";
+		};
+		BF7C3C341939897800BF09E0 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 		BFAF9308184821050051D9B2 /* Json */ = {
@@ -570,6 +581,7 @@
 				BF4C968317FA6A5F00B26952 /* l.jpg in Resources */,
 				BFC0E93918269F4400875C22 /* Red_star@2x.png in Resources */,
 				BFAF9335184821050051D9B2 /* letraR.json in Resources */,
+				BF917B2D193AC76300834F2A /* iPad_Storyboard.storyboard in Resources */,
 				BFAF932C184821050051D9B2 /* letraI.json in Resources */,
 				BFAF932E184821050051D9B2 /* letraK.json in Resources */,
 				BFF791D91831B78200C2F16B /* firefox.jpeg in Resources */,
@@ -820,10 +832,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "conjugverbos/conjugverbos-Prefix.pch";
 				INFOPLIST_FILE = "conjugverbos/conjugverbos-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -838,10 +850,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "conjugverbos/conjugverbos-Prefix.pch";
 				INFOPLIST_FILE = "conjugverbos/conjugverbos-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

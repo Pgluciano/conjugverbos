@@ -210,27 +210,59 @@ shouldReloadTableForSearchString:(NSString *)searchString
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    ViewVerbosController *detVerbos = [storyboard instantiateViewControllerWithIdentifier:@"viewVerbosDet"];
-    
-    [self.navigationController pushViewController:detVerbos animated:YES];
-    
-    //NSDictionary *aux = [listaverbos objectAtIndex:indexPath.row];
-    
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         
-        aux = [filteredList objectAtIndex:indexPath.row];
+        ViewVerbosController *detVerbos = [storyboard instantiateViewControllerWithIdentifier:@"viewVerbosDet"];
         
+        [self.navigationController pushViewController:detVerbos animated:YES];
+        
+        //NSDictionary *aux = [listaverbos objectAtIndex:indexPath.row];
+        
+        if (tableView == self.searchDisplayController.searchResultsTableView) {
+            
+            aux = [filteredList objectAtIndex:indexPath.row];
+            
+        }
+        else {
+            
+            aux = [listaverbos objectAtIndex:indexPath.row];
+        }
+        
+        detVerbos.auxTempoPresente = [aux objectForKey:@"nome"];
+        
+        [detVerbos setTitle:NSLocalizedString(@"TITULO_VERBO", @"Message")];
     }
-    else {
+    else
+    {
+    
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"iPad_Storyboard" bundle:nil];
         
-        aux = [listaverbos objectAtIndex:indexPath.row];
+        ViewVerbosController *detVerbos = [storyboard instantiateViewControllerWithIdentifier:@"viewVerbosDet"];
+        
+        [self.navigationController pushViewController:detVerbos animated:YES];
+        
+        //NSDictionary *aux = [listaverbos objectAtIndex:indexPath.row];
+        
+        if (tableView == self.searchDisplayController.searchResultsTableView) {
+            
+            aux = [filteredList objectAtIndex:indexPath.row];
+            
+        }
+        else {
+            
+            aux = [listaverbos objectAtIndex:indexPath.row];
+        }
+        
+        detVerbos.auxTempoPresente = [aux objectForKey:@"nome"];
+        
+        [detVerbos setTitle:NSLocalizedString(@"TITULO_VERBO", @"Message")];
+    
     }
     
-    detVerbos.auxTempoPresente = [aux objectForKey:@"nome"];
+
     
-    [detVerbos setTitle:NSLocalizedString(@"TITULO_VERBO", @"Message")];
+
     
 }
 

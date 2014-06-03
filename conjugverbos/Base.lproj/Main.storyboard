@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -192,7 +192,7 @@ http://itinerariosp.com.br</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQi-gG-ZOr">
-                                <rect key="frame" x="0.0" y="111" width="320" height="404"/>
+                                <rect key="frame" x="0.0" y="111" width="320" height="396"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
@@ -290,7 +290,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFQ-O1-9HY">
-                                <rect key="frame" x="20" y="108" width="52" height="52"/>
+                                <rect key="frame" x="20" y="76" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="A">
@@ -301,7 +301,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd6-m5-gnc">
-                                <rect key="frame" x="20" y="168" width="52" height="52"/>
+                                <rect key="frame" x="20" y="136" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="E">
@@ -312,7 +312,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMs-LN-beD">
-                                <rect key="frame" x="20" y="228" width="52" height="52"/>
+                                <rect key="frame" x="20" y="196" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="I">
@@ -323,7 +323,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="on4-FH-3d3">
-                                <rect key="frame" x="20" y="288" width="52" height="52"/>
+                                <rect key="frame" x="20" y="256" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="N">
@@ -334,7 +334,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx4-Vr-Y1w">
-                                <rect key="frame" x="20" y="348" width="52" height="52"/>
+                                <rect key="frame" x="20" y="316" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="R">
@@ -345,7 +345,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-It-h48">
-                                <rect key="frame" x="61" y="408" width="52" height="52"/>
+                                <rect key="frame" x="61" y="376" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="V">
@@ -356,7 +356,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te0-PK-1wY">
-                                <rect key="frame" x="96" y="108" width="52" height="52"/>
+                                <rect key="frame" x="96" y="76" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="B">
@@ -367,7 +367,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLe-zE-OJ2">
-                                <rect key="frame" x="96" y="168" width="52" height="52"/>
+                                <rect key="frame" x="96" y="136" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="F">
@@ -378,7 +378,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SH-Qr-XUp">
-                                <rect key="frame" x="96" y="228" width="52" height="52"/>
+                                <rect key="frame" x="96" y="196" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="J">
@@ -389,7 +389,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YJ-em-ML2">
-                                <rect key="frame" x="96" y="288" width="52" height="52"/>
+                                <rect key="frame" x="96" y="256" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="O">
@@ -400,7 +400,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-fT-dnf">
-                                <rect key="frame" x="96" y="348" width="52" height="52"/>
+                                <rect key="frame" x="96" y="316" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="S">
@@ -411,7 +411,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gY-bO-XhZ">
-                                <rect key="frame" x="137" y="408" width="52" height="52"/>
+                                <rect key="frame" x="137" y="376" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="X">
@@ -422,7 +422,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKb-ab-YWf">
-                                <rect key="frame" x="172" y="108" width="52" height="52"/>
+                                <rect key="frame" x="172" y="76" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="C">
@@ -433,7 +433,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMK-jY-h8s">
-                                <rect key="frame" x="172" y="168" width="52" height="52"/>
+                                <rect key="frame" x="172" y="136" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="G">
@@ -444,7 +444,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr5-t4-KTF">
-                                <rect key="frame" x="172" y="228" width="52" height="52"/>
+                                <rect key="frame" x="172" y="196" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="L">
@@ -455,7 +455,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXL-Rl-44d">
-                                <rect key="frame" x="172" y="288" width="52" height="52"/>
+                                <rect key="frame" x="172" y="256" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="P">
@@ -466,7 +466,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1t-st-mMK">
-                                <rect key="frame" x="172" y="348" width="52" height="52"/>
+                                <rect key="frame" x="172" y="316" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="T">
@@ -477,7 +477,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkr-Tg-OjN">
-                                <rect key="frame" x="213" y="408" width="52" height="52"/>
+                                <rect key="frame" x="213" y="376" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="Z">
@@ -488,7 +488,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7j-nz-YJi">
-                                <rect key="frame" x="248" y="108" width="52" height="52"/>
+                                <rect key="frame" x="248" y="76" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="D">
@@ -499,7 +499,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-LJ-KhO">
-                                <rect key="frame" x="248" y="168" width="52" height="52"/>
+                                <rect key="frame" x="248" y="136" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="H">
@@ -510,7 +510,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAO-Cw-o5M">
-                                <rect key="frame" x="248" y="228" width="52" height="52"/>
+                                <rect key="frame" x="248" y="196" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="M">
@@ -521,7 +521,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpP-py-v4y">
-                                <rect key="frame" x="248" y="288" width="52" height="52"/>
+                                <rect key="frame" x="248" y="256" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="Q">
@@ -532,7 +532,7 @@ Deste modo, recomendamos que consulte a nossa política de privacidade com regul
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvi-b0-q8a">
-                                <rect key="frame" x="248" y="348" width="52" height="52"/>
+                                <rect key="frame" x="248" y="316" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="50"/>
                                 <state key="normal" title="U">

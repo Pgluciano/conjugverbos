@@ -24,7 +24,13 @@
 
 -(void)applicationDidFinishLaunching:(UIApplication *)application
 {
-
+    
+    //if ([[UIDevice dispositivo] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+    //{
+    
+        
+    //}
+    
     //sleep(10);
 }
 							

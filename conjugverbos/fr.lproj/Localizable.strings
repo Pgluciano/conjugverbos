@@ -9,4 +9,5 @@
 "TITLE_VERBOS" = "Sélectionnez un verbe";
 "TITLE_ABOUT"  = "À propos de";
 "TITLE_CLASSIFIQUE" = "Évaluer";
-"LABLE_BUSCAR_NA_LETRA" = "Search on ";
+"LABLE_BUSCAR_NA_LETRA" = "Rechercher dans la lettre ";
+"LABLE_BUSCAR_TODOS_VERBOS" = "Chercher au tous les verbes";
